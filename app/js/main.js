@@ -28,7 +28,8 @@ $('.slider').slick({
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 3000,
+    pauseOnHover: false
 });
 
 $('.multu-slider').slick({

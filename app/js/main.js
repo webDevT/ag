@@ -26,7 +26,9 @@ $('.slider').slick({
     slidesToShow: 1,
     fade: true,
     prevArrow: $('.prev'),
-    nextArrow: $('.next')
+    nextArrow: $('.next'),
+    autoplay: true,
+    autoplaySpeed: 3000
 });
 
 $('.multu-slider').slick({

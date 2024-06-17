@@ -1,0 +1,635 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+    font-family: $main-font
+    font-size: 16px
+    color: $black
+    font-weight: 400
+    margin: 0 
+    padding: 0
+    min-height: 2000px
+body,
+body * 
+    box-sizing: border-box
+.container 
+    width: 1400px 
+    max-width: 97vw
+    padding-left: 0 
+    padding-right: 0
+.container--xs
+    width: 1200px
+.h1
+    font-size: 75px
+    font-family: $secondary-font
+    font-weight: 300
+    color: #fff
+    margin-top: 0
+    margin-bottom: 20px
+    span 
+        font-weight: 700
+        border-bottom: 9px solid $red
+        padding-left: 5px 
+        padding-right: 5px  
+.h2 
+    font-size: 60px
+    color: $red 
+    font-weight: 300 
+    font-family: $secondary-font
+.h3 
+    color: $red
+    font-size: 31px
+    font-family: $secondary-font
+    font-weight: 300
+.h1--black,
+.h2--black
+    color: $black
+.sub-title 
+    font-size: 21px
+    color: #fff
+    span 
+        font-weight: 600
+.italic
+    font-style: italic
+.button 
+    background: $red 
+    color: #fff
+    text-decoration: none 
+    padding: 8px 16px
+    width: 260px 
+    max-width: 100%
+    display: flex
+    justify-content: center 
+    align-items: center
+    margin-left: auto 
+    margin-right: auto
+    border-radius: 5px
+    transition: all .3s
+    font-weight: 500
+.button:hover 
+    opacity: 0.9
+    color: #fff
+.section 
+    padding-top: 100px 
+    padding-bottom: 100px
+.button--white
+    background: #fff
+    color: $black
+.button--white:hover 
+    color: #000
+.button-wrapper
+    margin-top: 40px
+//end global style
+
+//start header
+.header__logo 
+    outline: none
+    img 
+        width: 180px 
+        //margin-left: auto 
+        //margin-right: auto
+        display: block
+.menu 
+    ul 
+        display: flex 
+        padding: 0 
+        margin: 0
+        list-style: none
+        li 
+            margin-right: 20px
+        a 
+            font-size: 15px
+            text-decoration: none
+            color: $black
+.header__content
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    padding-top: 15px 
+    padding-bottom: 15px
+    width: 100%
+.header__right
+    display: flex 
+    align-items: center
+.social 
+    display: flex
+    align-items: center
+    margin-right: 35px
+    margin-left: 0px
+    a 
+        fill: #000
+        text-decoration: none
+        display: block
+        margin-left: 20px
+        svg 
+            width: 19px
+            height: 19px
+            fill: #000
+.button-transparent
+    font-size: 13.5px 
+    border: 1px solid #000
+    padding: 8px 15px
+    border-radius: 5px
+    color: $black 
+    text-decoration: none
+    letter-spacing: 1.5px
+.button-transparent:hover
+    color: #000
+.header
+    background: #fff
+    box-shadow: 0px 5px 20px rgba(#000, .2)
+    z-index: 999
+    position: relative
+.header.sticky 
+    position: fixed 
+    top: 0 
+    left: 0 
+    width: 100%
+//end header
+
+//start main screen
+.slider-item
+    position: relative
+    padding-top: 150px 
+    padding-bottom: 150px
+.slider-item:before 
+    content: ''
+    position: absolute 
+    z-index: 98
+    top: 0 
+    left: 0
+    width: 100% 
+    height: 100%
+    background: rgba(0, 0, 0, 0.6)
+.slider-item__img
+    position: absolute 
+    width: 100%
+    height: 100%
+    top: 0 
+    left: 0
+    object-fit: cover 
+    object-position: center
+.slider-item__content
+    position: relative
+    z-index: 99
+    color: #fff
+    height: 100%
+    display: flex 
+    flex-direction: column 
+    justify-content: center 
+    align-items: center
+.slider-item__content
+    width: 1400px 
+    max-width: 97vw
+    margin-left: auto 
+    margin-right: auto
+    text-align: center
+.main-screen 
+    p 
+        margin-top: 40px 
+        margin-bottom: 40px
+        width: 600px 
+        max-width: 100% 
+        margin-left: auto 
+        margin-right: auto
+.next,
+.prev 
+    background: rgba($blue, 0.6)
+    width: 27px 
+    height: 32px
+    position: absolute 
+    top: 50%
+    transform: translateY(-50%)
+    display: flex 
+    justify-content: center 
+    align-items: center
+    img 
+        width: 5px
+.slider-wrapper 
+    position: relative
+.prev 
+    left: 2.5vw
+.next 
+    right: 2.5vw
+//end main screen
+
+//start our destination style 
+.our-destination
+    background: $black
+    color: #fff
+    .button 
+        width: 340px 
+        max-width: 100%
+.our-destination__item-img-wrapper
+    width: 100%
+    height: 320px
+    overflow: hidden
+    border-radius: 20px
+.our-destination__item-img
+    width: 100%
+    height: 100%
+    object-fit: cover 
+    object-position: center
+    transition: all 0.5s  
+    overflow: hidden
+.our-destination__item-img:hover 
+    transform: scale(1.3)
+.our-destination__item-title
+    text-align: center
+    font-size: 39px
+    font-family: $secondary-font
+.our-destination__item
+    color: #fff 
+    text-decoration: none
+.our-destination__item:hover 
+    color: #fff
+//end our destination style 
+
+//start item section style 
+.item-section
+    text-align: center
+    .h2 
+        margin-bottom: 80px
+.img-wrapper
+    width: 360px 
+    height: 274px
+    max-width: 100%
+    border-radius: 20px
+    overflow: hidden
+    margin-left: auto 
+    margin-right: auto
+.item-img   
+    width: 100%
+    height: 100%
+    object-fit: cover 
+    object-position: center
+    transition: all .5s
+.item-img:hover
+    transform: scale(1.5)
+.item 
+    color: $black 
+    text-decoration: none
+    display: block
+    p 
+        margin-top: 20px 
+        margin-bottom: 25px
+.item:hover 
+    color: $black   
+//end item section style 
+.designer-section
+    background: #fafafa
+    .container
+        display: flex 
+        justify-content: space-between
+        align-items: flex-start
+.designer-section__text-wrapper
+    min-width: 350px
+    width: 350px
+    max-width: 100%
+    background: #fff
+    padding: 30px 20px 
+    border-radius: 20px
+    text-align: center
+    padding-bottom: 130px
+    p 
+        font-size: 21px
+.designer-section__img-content
+    width: calc(100% - 400px)
+    height: 600px
+    overflow: hidden 
+    border-radius: 20px   
+.designer-section__img
+    width: 100%
+    object-fit: cover 
+    object-position: center
+    transition: all 1s
+.designer-section__img:hover 
+    transform: scale(1.4)   
+.designer-section__title
+    font-size: 36px
+    font-family: $secondary-font
+.designer-section__title
+    margin-bottom: 35px
+.start 
+    display: flex 
+    align-items: center
+    justify-content: center
+    margin-top: 40px
+    img 
+        width: 35px
+        display: block 
+        margin: 0 2px
+//start designer style 
+
+//start sport section
+.sport-section
+    background: $red
+    text-align: center
+    color: #fff
+    .h2 
+        color: #fff
+        margin-bottom: 50px
+.sport-section__item-img-wrapper
+    width: 100%
+    height: 450px
+    overflow: hidden
+    border-radius: 20px
+.sport-section__item-img
+    width: 100%
+    height: 100%
+    object-fit: cover 
+    object-position: center
+    transition: all 0.5s  
+    overflow: hidden
+.sport-section__item-img:hover 
+    transform: scale(1.3)
+.sport-section__item-title
+    margin-top: 15px
+.sport-section__item
+    color: #fff 
+    text-decoration: none
+    display: block
+.sport-section__item:hover 
+    color: #fff
+//end sport section
+
+//start luxury-section
+.luxury-section
+    p 
+        font-size: 21px
+    .h1 
+        text-align: center
+    .h3 
+        color: $black
+        font-size: 36px
+        margin-top: 40px 
+        margin-bottom: 40px
+.image-wrapper
+    width: 100%
+    height: 700px
+    overflow: hidden
+    border-radius: 20px
+    img 
+        width: 100% 
+        height: 100% 
+        object-fit: cover
+        object-position: center
+        transition: all .6s
+.image-wrapper img:hover 
+    transform: scale(1.3)
+//end luxury-section
+
+//start baner section
+.banner-section
+    background: $black
+    padding-top: 50px 
+    padding-bottom: 50px
+    .container 
+        display: flex 
+        flex-direction: column 
+        justify-content: center 
+        align-items: center
+.banner 
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    width: 1090px 
+    max-width: 100%
+.banner-link
+    display: inline-block 
+    margin-left: auto 
+    margin-right: auto
+    color: #fff
+    text-align: center
+    margin-top: 30px 
+    text-decoration: none
+.banner-link:hover 
+    color: #fff
+//end banner section
+
+.multu-slider__item
+    padding: 10px
+.multu-slider__item-img-wrapper
+    width: 100%
+    height: 490px
+    overflow: hidden
+    border-radius: 10px
+    position: relative
+.multu-slider__item-img
+    transition: all 0.8s
+    width: 100% 
+    height: 100%
+    object-fit: cover 
+    object-position: center
+.multu-slider__item-img:hover
+    transform: scale(1.2)
+.slider-section
+    .h2 
+        text-align: center
+        color: $black
+        margin-bottom: 50px
+.multu-prev,
+.multu-next
+    width: 60px 
+    height: 60px 
+    border-radius: 50% 
+    background: rgba($red, .6)
+    display: flex
+    align-items: center 
+    justify-content: center
+    padding: 15px
+    cursor: pointer
+    transition: all .3s
+    img 
+        width: 100%
+.multu-prev:hover,
+.multu-next:hover
+    background: $red
+.multu-arrows
+    position: absolute 
+    top: 50% 
+    transform: translateY(-100%)
+    left: 0
+    z-index: 99
+    width: 100%
+    .container 
+        width: 90vw 
+        max-width: 90vw
+        display: flex 
+        justify-content: space-between 
+        align-items: center
+.multu-slider-wrapper
+    position: relative
+.multu-slider__title
+    font-family: $secondary-font
+    margin-top: 20px 
+    font-size: 18px
+
+//start best selling style
+.section-header
+    width: 800px 
+    max-width: 100%
+.best-selling__item
+    width: 100%
+    height: 750px
+    border-radius: 20px
+    overflow: hidden
+    position: relative
+.best-selling__item-img
+    width: 100% 
+    height: 100% 
+    object-fit: cover
+    object-position: center
+    position: absolute 
+    top: 0 
+    left: 0
+    transition: all .5s
+.best-selling__item:hover  .best-selling__item-img
+    transform: scale(1.2)
+.best-selling__item-content
+    padding: 15px
+    background: rgba($black, .87)
+    color: #fff
+    position: relative
+    z-index: 9
+    margin: 40px
+    width: 315px 
+    max-width: 100%
+    padding-bottom: 50px
+    p 
+        font-size: 15px
+.best-selling__item-title
+    font-family: $secondary-font
+    font-size: 21px
+    margin-bottom: 30px
+.best-selling__item-footer
+    margin-top: 50px
+.best-selling__button
+    background: #fff 
+    color: $black
+    text-decoration: none
+    height: 40px 
+    width: 315px 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-left: -55px
+    border: 1px solid #000
+    margin-top: 100px
+.best-selling__button:hover 
+    color: $black
+.best-selling__item
+    margin-bottom: 25px
+//end best sekking style
+
+//start integrity style 
+.integrity
+    display: flex
+.integrity__content
+    width: 50%
+.integrity__img-wrapper
+    width: 50% 
+    height: 750px
+    overflow: hidden
+    img 
+        width: 100% 
+        height: 100% 
+        object-fit: cover 
+        object-position: center
+        transition: all .5s
+.integrity__img-wrapper img:hover
+    transform: scale(1.2)
+.integrity__content
+    background: #fafafa
+    padding-top: 100px 
+    padding-bottom: 100px 
+    padding-left: 15px 
+    padding-right: 15px
+    display: flex 
+    justify-content: center 
+    align-items: center
+.integrity__content-wrapper
+    width: 581px 
+    max-width: 100%
+    .h2 
+        margin-bottom: 50px
+.integration-logo
+    width: 430px 
+    max-width: 100%
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    margin-top: 100px
+//end integrity style 
+
+//start images style 
+.images-section
+    background: $blue
+    display: flex
+.images-section__col
+    width: 50%
+    img 
+        width: 100%
+.images-section__img
+    overflow: hidden
+    img 
+        transition: all .5s
+.images-section__img img:hover
+    transform: scale(1.2)
+//end images style 
+
+//start slogan section style
+.slogan-section
+    padding-top: 50px 
+    padding-bottom: 50px
+    background: $red
+    font-style: italic
+    border-bottom: 1px solid #fafafa
+    p 
+        text-align: center
+        color: #fff
+        font-size: 21px 
+        font-family: $secondary-font
+        width: 865px 
+        max-width: 100% 
+        margin-left: auto 
+        margin-right: auto
+//end slogan section style
+
+//start footer style 
+.footer 
+    padding-top: 50px 
+    padding-bottom: 30px
+    background: $red
+    color: #fff
+    .container 
+        display: flex
+        justify-content: space-between
+.footer__link
+    display: block 
+    margin-bottom: 25px
+.footer-form__title
+    margin-bottom: 20px
+.footer__form
+    height: 60px 
+    input 
+        height: 100%
+        padding-left: 30px 
+        padding-right: 30px
+        outline: none
+        border: none
+.submit-button
+    background: #fff 
+    border-radius: 5px 
+    color: $red
+    border: none
+.copy
+    font-size: 14px
+    margin-top: 30px
+//end footer style
+
+@import "media"
+
+
+

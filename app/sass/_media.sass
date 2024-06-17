@@ -1,0 +1,278 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+	/**/
+	.menu ul a
+		font-size: 14px
+	.header__logo img
+		width: 140px
+	
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1300px)
+	/**/
+	.header__logo img
+		width: 130px
+	.social
+		margin-right: 30px
+	.menu ul li 
+		margin-right: 15px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 1170px)
+	/**/
+	.header__logo img
+		width: 110px
+	.menu ul a
+		font-size: 12px
+	.social a
+		margin-left: 10px
+	.social
+		margin-right: 20px
+	.button-transparent
+		font-size: 12px
+	.button 
+		padding-left: 10px 
+		padding-right: 10px
+	
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 992px)
+	/**/
+	.container 
+		width: 90vw 
+		max-width: 90vw
+	.header__right
+		display: none
+	.header__logo img
+		width: 160px
+	.menu-row
+		width: 30px 
+		height: 2px 
+		background: #000
+		margin-bottom: 10px
+	.menu-row:last-child 
+		margin-bottom: 0
+	.menu-btn
+		cursor: pointer
+	.menu-btn.active 
+		.menu-row:first-child
+			transform: rotate(45deg)
+			margin-bottom: 0
+		.menu-row:last-child
+			transform: rotate(-45deg)
+			position: relative
+			top: -1px
+	.header 
+		position: relative
+		z-index: 999
+	.header__right.active
+		position: absolute 
+		top: 100% 
+		left: 0 
+		background: $blue
+		width: 100%
+		padding-left: 5vw 
+		padding-right: 5vw
+		height: calc(100vh - 72.88px)
+		padding-top: 30px 
+		padding-bottom: 30px
+		display: flex
+		flex-direction: column 
+		justify-content: center 
+		align-items: center
+		li
+			margin-bottom: 20px
+			a 
+				color: #fff
+				font-size: 24px
+	.menu ul
+		flex-direction: column
+	.menu ul li
+		text-align: center
+	.social
+		display: flex 
+		justify-content: center
+		margin-top: 30px 
+		margin-bottom: 50px
+		a 
+			svg 
+				fill: #fff
+	.button-transparent
+		background: #fff 
+		border: none 
+		margin-left: auto 
+		margin-right: auto
+		display: flex
+		justify-content: center 
+		align-items: center
+		width: 300px 
+		max-width: 100%
+		font-size: 18px
+	.img-wrapper
+		width: 100%
+	.item 
+		margin-bottom: 40px
+	.designer-section
+		.container 
+			flex-direction: column
+	.designer-section__img-content
+		width: 100%
+	.designer-section__text-wrapper
+		margin-left: auto 
+		margin-right: auto
+	.designer-section__img-content
+		height: 60vw
+		margin-bottom: 40px
+	.sport-section__item
+		margin-bottom: 30px
+	.integrity
+		flex-direction: column
+	.integrity__content
+		width: 100%
+	.integrity__img-wrapper
+		width: 100%
+		height: 80vw
+	.footer
+		.container 
+			flex-direction: column
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 768px)
+	/**/
+	.h1
+		font-size: 56px
+		line-height: 1.2
+	.slider-item
+		padding-top: 50px 
+		padding-bottom: 50px
+	.slider-item__content
+		max-width: 90vw
+	.our-destination__item-img
+		height: 80vw
+	.our-destination__item-title 
+		font-size: 44px
+	.section 
+		padding-top: 50px 
+		padding-bottom: 50px
+	.h2
+		font-size: 44px
+	.item-section .h2 
+		margin-bottom: 40px
+	.designer-section__text-wrapper
+		min-width: auto 
+		max-width: auto
+	.sport-section__item-img-wrapper
+		height: 60vw
+	.image-wrapper
+		height: 80vw
+		width: 100vw 
+		margin-left: -5vw
+		border-radius: 0
+	.multu-arrows
+		top: 100%
+		.container
+			justify-content: center
+	.multu-slider-wrapper
+		padding-bottom: 50px
+	.multu-next,
+	.multu-prev
+		width: 40px 
+		height: 40px
+		padding: 10px
+		background: $red
+		margin: 0 15px
+	.multu-slider__item 
+		padding: 5vw
+	.slider-section .h2 
+		margin-bottom: 20px
+	.best-selling__item-content
+		margin: 0
+	.best-selling__item-content
+		width: 100%
+	.best-selling__item
+		display: flex 
+		align-items: center
+	.best-selling__button
+		margin-left: 0
+		width: 170px
+		padding-left: 30px 
+		padding-right: 30px
+		padding-top: 5px 
+		padding-bottom: 5px
+		line-height: 1.2
+		height: auto
+		text-align: center
+		position: absolute 
+		bottom: 0 
+		left: 50% 
+		transform: translateX(-50%) translateY(50%)
+	.best-selling__item
+		height: 580px
+		margin-bottom: 20px
+	.integrity__content
+		padding-top: 50px 
+		padding-bottom: 50px
+	.integration-logo
+		margin-top: 50px
+	.footer 
+		padding-top: 20px
+	.footer-form
+		input 
+			padding-left: 15px 
+			padding-right: 15px
+		input[type="text"]
+			width: calc( 100% - 95px)
+		input[type="submit"]
+			width: 90px
+			min-width: 90px
+	.footer__col 
+		margin-top: 50px
+	.copy 
+		text-align: center
+	
+		
+	
+	
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+

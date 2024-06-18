@@ -6,6 +6,8 @@ $(function(){
     })
 
 
+
+
 });
 
 // ------start sticky header------
@@ -24,11 +26,10 @@ $(window).scroll(function() {
 //start slider
 $('.slider').slick({
     slidesToShow: 1,
-    fade: true,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     pauseOnHover: false
 });
 
@@ -49,4 +50,13 @@ $('.multu-slider').slick({
 });
 
 //end slider
+if($(window).width() < 992) {
+
+        $('.menu > ul > li > a').on('click', function(event) {
+          event.preventDefault(); 
+          $(this).siblings('.sub-menu').toggleClass('active');
+         $('.sub-menu-item').toggleClass('active');
+        });
   
+      
+}

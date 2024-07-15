@@ -14,6 +14,9 @@
 </head>
 <body>
 
+
+	
+
 <!-- start header -->
 <header class="header">
 	<div class="container">
@@ -121,9 +124,17 @@
 		</h1>
 		
 	</div>
-	<video autoplay loop muted class="video">
+	<picture>
+		<source srcset="videos/video_bg.mp4" type="video/mp4">
+		<video autoplay muted loop class="background-video video">
 			<source src="img/video.mp4" type="video/mp4">
-		  </video>
+			Your browser does not support the video tag.
+		</video>
+		<img src="img/image.png" alt="background image" class="background-image video">
+	</picture>
+	<!-- <video autoplay loop muted class="video">
+			<source src="img/video.mp4" type="video/mp4">
+		  </video> -->
 </section>
 <!-- end video section -->
 
@@ -248,5 +259,25 @@
 <script src="js/jQuery.js"></script>
 <script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const videoElement = document.querySelector('video');
+			const imgElement = document.querySelector('.background-image');
+	
+			if (navigator.connection) {
+				const connectionType = navigator.connection.effectiveType;
+				if (connectionType === '4g') {
+					videoElement.style.display = 'block';
+					imgElement.style.display = 'none';
+				} else {
+					videoElement.style.display = 'none';
+					imgElement.style.display = 'block';
+				}
+			} else {
+				videoElement.style.display = 'block';
+				imgElement.style.display = 'none';
+			}
+		});
+	</script>
 </body>
 </html>

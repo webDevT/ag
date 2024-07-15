@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>AvantGarde Vacations</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+<!-- start header -->
+<header class="header">
+	<div class="container">
+		
+		<div class="header__content">
+			
+			<a href="/" class="header__logo">
+			<img src="img/logo.png" alt="">
+		</a>
+
+			<div class="menu-btn">
+				<div class="menu-row"></div>
+				<div class="menu-row"></div>
+			</div>
+
+			<div class="header__right">
+				<div class="menu">
+					<ul>
+	
+						<li class="">
+							<a href="destinations.html" class="active">DESTINATIONS</a>					
+						</li>
+
+						<!-- start item with sub-menu -->
+						<li class="sub-menu-item">
+							<a href="about-us.html">ABOUT US</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="our-origin-story.html">
+										Our Origin Story
+									</a>
+								</li>
+
+								<li>
+									<a href="meet-the-team.html">
+										Meet the Team
+									</a>
+								</li>
+
+								<li>
+									<a href="why-avantgarde-vacations.html">
+										Why Avantgarde Vacations
+									</a>
+								</li>
+
+							</ul>
+						</li>
+						<!-- end item with sub-menu -->
+	
+						<li>
+							<a href="groups.html">GROUPS</a>
+						</li>
+	
+						<!-- <li>
+							<a href="sports.html">SPORTS</a>
+						</li>
+	
+						<li>
+							<a href="yachts-cruises.html">YACHTS & CRUISES
+							</a>
+						</li>				
+	
+						<li>
+							<a href="agents-corner.html">AGENTS CORNER</a>
+						</li> -->
+	
+						<li>
+							<a href="trip-request.html">TRIP REQUEST
+							</a>
+						</li>
+	
+						
+	
+					</ul>
+				</div>
+				<div class="social">
+					<a href="">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.3035 5.77319C8.198 5.77319 5.69311 8.27808 5.69311 11.3835C5.69311 14.489 8.198 16.9939 11.3035 16.9939C14.4089 16.9939 16.9138 14.489 16.9138 11.3835C16.9138 8.27808 14.4089 5.77319 11.3035 5.77319ZM11.3035 15.031C9.29663 15.031 7.65601 13.3953 7.65601 11.3835C7.65601 9.37183 9.29175 7.73608 11.3035 7.73608C13.3152 7.73608 14.9509 9.37183 14.9509 11.3835C14.9509 13.3953 13.3103 15.031 11.3035 15.031ZM18.4519 5.5437C18.4519 6.27124 17.866 6.8523 17.1433 6.8523C16.4158 6.8523 15.8347 6.26636 15.8347 5.5437C15.8347 4.82104 16.4207 4.23511 17.1433 4.23511C17.866 4.23511 18.4519 4.82104 18.4519 5.5437ZM22.1677 6.87183C22.0847 5.1189 21.6843 3.56616 20.4001 2.28687C19.1208 1.00757 17.5681 0.607178 15.8152 0.519287C14.0085 0.416748 8.59351 0.416748 6.78687 0.519287C5.03882 0.602295 3.48608 1.00269 2.2019 2.28198C0.917725 3.56128 0.522217 5.11401 0.434326 6.86694C0.331787 8.67358 0.331787 14.0886 0.434326 15.8953C0.517334 17.6482 0.917725 19.2009 2.2019 20.4802C3.48608 21.7595 5.03394 22.1599 6.78687 22.2478C8.59351 22.3503 14.0085 22.3503 15.8152 22.2478C17.5681 22.1648 19.1208 21.7644 20.4001 20.4802C21.6794 19.2009 22.0798 17.6482 22.1677 15.8953C22.2703 14.0886 22.2703 8.67847 22.1677 6.87183ZM19.8337 17.8337C19.4529 18.7908 18.7156 19.5281 17.7537 19.9138C16.3132 20.4851 12.8953 20.3533 11.3035 20.3533C9.71167 20.3533 6.28882 20.4802 4.85327 19.9138C3.89624 19.533 3.15894 18.7957 2.77319 17.8337C2.2019 16.3933 2.33374 12.9753 2.33374 11.3835C2.33374 9.79175 2.20679 6.3689 2.77319 4.93335C3.15405 3.97632 3.89136 3.23901 4.85327 2.85327C6.2937 2.28198 9.71167 2.41382 11.3035 2.41382C12.8953 2.41382 16.3181 2.28687 17.7537 2.85327C18.7107 3.23413 19.448 3.97144 19.8337 4.93335C20.405 6.37378 20.2732 9.79175 20.2732 11.3835C20.2732 12.9753 20.405 16.3982 19.8337 17.8337Z"/>
+							</svg>
+					</a>
+					<a href="">
+						<svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.6099 14.6841L13.3042 10.1597H8.96289V7.22363C8.96289 5.98584 9.56934 4.7793 11.5137 4.7793H13.4873V0.927246C13.4873 0.927246 11.6963 0.621582 9.98389 0.621582C6.40869 0.621582 4.07178 2.78857 4.07178 6.71143V10.1597H0.0976562V14.6841H4.07178V25.6216H8.96289V14.6841H12.6099Z"/>
+							</svg>
+					</a>
+				</div>
+
+				<a href="" class="button-transparent">
+					Register
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- end header -->
+
+<!-- start destination page -->
+<section class="page section itineray">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-6 itineray--col">
+
+				<h2 class="h2 h2--black">
+					Classic Morocco
+				</h2>
+
+				<div class="itineray-dates">
+					10 Days | 9 Nights - Rabat, Volubilis, Fez, Meknes, Casablanca, Marrakech
+				</div>
+
+				<p>
+					Experience the essence of Morocco exploring the historical cities of Rabat, Volubilis, Fez, and Meknes, the vibrant metropolis of Casablanca, and the enchanting allure of Marrakech. Immerse yourself in the rich culture, stunning architecture, and captivating landscapes that define this classic Moroccan journey.
+				</p>
+				<div class="destination-list itineray-list">
+
+					<!-- start destination item -->
+					<div class="destination-item">
+						<div class="destination-item__header">
+							<div class="destination-item__title">
+								Day-by-Day Itinerary
+
+							</div>
+		
+							<div class="destination-item__plus">
+								<div class="destination-item__plus-line"></div>
+								<div class="destination-item__plus-line"></div>
+							</div>
+						</div>
+		
+						<div class="destination-item__content">
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+									Day 1: Casablanca, Rabat
+								</strong>
+							</p>
+								<p>
+									Arrive at Casablanca and transfer to your hotel in Rabat, where you'll have the rest of the day to explore Morocco's capital. Your tour will begin with an orientation meeting with your guide.
+								</p>
+								<p>
+									[B] = Breakfast | [B/L] = Breakfast & Lunch | [B/D] = Breakfast & Dinner
+								</p>
+							</div>
+							<!-- end day -->
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+										Day 2: Rabat
+								</strong>
+							</p>
+								<p>
+									This morning after breakfast, visit the city of Rabat. You'll see the Royal Palace, the ancient ruins of Chellah, the Oudaya Kasbah, and the imposing 12th-century red sandstone Hassan Tower. Visit the Museum of Ornaments before getting lunch in a local Restaurant, then spend the afternoon at leisure. [B/L]
+								</p>
+							</div>
+							<!-- end day -->
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+										Day 3: Rabat, Volubilis, Fez
+								</strong>
+							</p>
+								<p>
+									This morning after breakfast, explore the Roman ruins of Volubilis, a UNESCO World Heritage Site, for an extraordinary insight into ancient Morocco. You'll discover a variety of opulent residences, important monuments and olive mills nestled among the remains of the city's fortified walls. Notable attractions include the well-preserved triumphal arch of Caracalla and a captivating array of mosaics and vibrant tiles depicting Roman mythology. In the afternoon, you'll travel to the imperial city of Fez. On arrival, you'll settle into your hotel. This evening, enjoy a special dinner hosted by a local family, allowing you to immerse yourself in Moroccan culture and traditions.* [B/D]
+								</p>
+								<p>
+									*Dinner at a local's home in Fez may be rescheduled for another day, depending on your host's availability.
+								</p>
+							</div>
+							<!-- end day -->
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+										Day 4: Fez
+								</strong>
+							</p>
+								<p>
+									Start the day with a city tour of Fez. Visit the many hidden treasures of the medina that only a Moroccan guide knows about. Fès was the capital of Morocco for over 400 years and is home to the University of Al Karaouine. It is particularly famous for its tanneries and the Fès el Bali medina. A short visit to the surrounding leather stores will give you the best view of the tanneries. The Attarine Medersa, Moulay Idriss mausoleum, fountains and Nejjarine museum. You can also buy authentic Moroccan carpets. Finally, admire the exterior of the royal palace and stroll through the medina's famous Jewish quarter, where you'll have the opportunity to walk through one of Morocco's few remaining Jewish cemeteries. [B]
+								</p>
+							</div>
+							<!-- end day -->
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+										Day 5: Fez, Meknes, Casablanca
+								</strong>
+							</p>
+								<p>
+									Today, discover the fortified city of Meknes, a UNESCO World Heritage Site. Admire the monumental horseshoe-shaped Bab Mansour Gate, with its priceless mosaics, sumptuous tiles and inscriptions. Then lunch in the foothills of the Atlas Mountains, in a vineyard with beautifully tended gardens and traditional fountains. Enjoy a tasting of white and red wines. The road then takes you to Casablanca, which inspired the classic 1942 film. [B/L]
+								</p>
+							</div>
+							<!-- end day -->
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+										Day 6: Casablanca, Marrakech
+								</strong>
+							</p>
+								<p>
+									After breakfast, sightseeing tour includes the exterior of the Hassan II Mosque* and the magnificent Corniche waterfront. Continue through Casablanca's residential neighborhoods to the city center to visit Place Mohammed V, the Habous district and Notre Dame de Lourdes Cathedral. Later, you will leave Casablanca for Marrakech. Arrival and check-in at the hotel, free time. [B]
+								</p>
+								<p>
+									<i>
+										*The Hassan II Mosque is subject to unexpected closures for local religious observances. Details will be provided locally by your Tour Manager.
+									</i>
+								</p>
+							</div>
+							<!-- end day -->
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+										Day 7: Marrakech
+								</strong>
+							</p>
+								<p>
+									After breakfast, morning city tour. Visit the Saadian tombs, dating from the 16th century. You'll also visit the Koutoubia minaret and the magnificent Bahia Palace. Finally, the tour ends with a stroll through the medina before arriving at Djemaa el Fna square. The afternoon is at leisure, or you can take part in an optional activity. [B]
+								</p>
+								<p>
+									<strong>Option: Cooking class:</strong>
+									 Join a cooking class and learn how to prepare traditional Moroccan tagines and salads.
+								</p>
+								<p>
+									<strong>Option: Horse carriage:</strong>
+									Take a horse-drawn carriage ride through Djemaa el Fna square and the lively streets of Marrakech at night.
+								</p>
+							</div>
+							<!-- end day -->
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+										Day 8: Marrakech
+								</strong>
+							</p>
+								<p>
+									Today, explore the city at your leisure or join one of our optional tours. In the evening, enjoy a typical Moroccan dinner with a show. [B/D]
+								</p>
+								<p>
+									Option: Hot-air balloon flight*. Get up before dawn to take part in today's optional hot-air balloon excursion, which will allow you to witness the sunrise over Marrakech. Drift over the magnificent landscape, before returning to earth to enjoy a traditional Moroccan breakfast
+								</p>
+								<p>
+									<strong>
+										Option: Tour to Essaouira
+									</strong>*, whose medina is a UNESCO World Heritage Site and an excellent example of a North African fortified town. Walk along the city walls, just north of Place Moulay Hassan, where local artists sell their paintings. Continue to the Skala of the City, a fortification built along the cliffs that defended the city against sea attacks. Explore the medina's many souks, including the spice and jewelry souks. Visit a jewelry store, renowned for its quality and design.
+									*The Marrakech sunrise hot-air balloon excursion with breakfast and the Essaouira day trip run concurrently. Passengers may choose to take part in only one of these excursions.
+								</p>
+								
+							</div>
+							<!-- end day -->
+
+							<!-- start day -->
+							<div class="day">
+								<p>
+									<strong>
+										Day 9: Marrakech, USA
+								</strong>
+							</p>
+								<p>
+									After breakfast, transfer to the airport for your departure flight.
+								</p>	
+								
+								<div class="icons-row">
+
+									<a href="" class="icon-item">
+										<img src="img/i1.svg" alt="">
+									</a>
+
+									<a href="" class="icon-item">
+										<img src="img/i2.svg" alt="">
+									</a>
+
+									<a href="" class="icon-item">
+										<img src="img/i3.svg" alt="">
+									</a>
+
+									<a href="" class="icon-item">
+										<img src="img/i4.svg" alt="">
+									</a>
+
+									<a href="" class="icon-item">
+										<img src="img/i5.svg" alt="">
+									</a>
+
+								</div>
+								
+							</div>
+							<!-- end day -->
+
+							
+						
+						
+							
+							
+							
+						</div>
+					</div>
+					<!-- end destination item -->
+
+										<!-- start destination item -->
+										<div class="destination-item">
+											<div class="destination-item__header">
+												<div class="destination-item__title">
+													Tour Includes
+												</div>
+							
+												<div class="destination-item__plus">
+													<div class="destination-item__plus-line"></div>
+													<div class="destination-item__plus-line"></div>
+												</div>
+											</div>
+							
+											<div class="destination-item__content">
+												<p>Tour Includes:</p>
+												<p>- Arrival & departure transfers</p>
+												<p>- 8 nights’ accommodation:</p>
+												<p>Rabat 2 nights</p>
+												<p>Fez 2 nights</p>
+												<p>Casablanca 1 night</p>
+												<p>Marrakech 3 nights</p>
+												<p>- Meals:</p>
+												<p>Breakfast daily</p>
+												<p>3 lunches</p>
+												<p>2 dinners</p>
+												<p>-Sightseeing of Rabat</p>
+												<p>-Explore the Roman ruins of Volubilis</p>
+												<p>-Traditional dinner with a local family</p>
+												<p>-Visit Fez, including the Jewish Quarter</p>
+												<p>
+-Discover the fortified city of Meknes
+												</p>
+												<p>-Sightseeing of Casablanca</p>
+												<p>-Tour the city of Marrakech</p>
+												<p>-Horse-drawn carriage ride through Jna el-Fna Square</p>
+												<p>-Optional hot-air balloon flight over Marrakech</p>
+												<p>-Optional excursion to Essaouira</p>
+												<p>-Entrance fees according to itinerary</p>
+												<p>-Services of an English-speaking tour guide for the duration of the trip</p>
+												<p>-English-speaking local guide at your service</p>
+												<p>-Private AC transportation by modern A/C vehicle</p>
+												<p>-Bags portage at hotels</p>
+												<p>-Hotel taxes, fees and service charge</p>
+											
+											</div>
+										</div>
+										<!-- end destination item -->
+
+										<!-- start destination item -->
+										<div class="destination-item">
+											<div class="destination-item__header">
+												<div class="destination-item__title">
+													Not Included In Tour
+												</div>
+							
+												<div class="destination-item__plus">
+													<div class="destination-item__plus-line"></div>
+													<div class="destination-item__plus-line"></div>
+												</div>
+											</div>
+							
+											<div class="destination-item__content">
+												<p>-Airfare, taxes and fees
+Note: Special airfares are available through us from all USA gateways</p>
+												<p>-Travel insurance</p>
+												<p>-Optional tours</p>
+												<p>-Wi-Fi at hotels</p>
+												<p>-All items of a purely personal nature such as other drinks that is not specified, laundry, etc.</p>
+												<p>-Early check in and late checkout</p>
+												<p>-Visas</p>
+												<p>-Gratuities to guides ($5) and driver ($3)</p>
+												<p>-Any service not specifically listed under "included”</p>										
+											</div>
+										</div>
+										<!-- end destination item -->
+
+										<!-- start destination item -->
+										<div class="destination-item destination-item--table">
+											<div class="destination-item__header">
+												<div class="destination-item__title">
+													Accommodations 
+												</div>
+							
+												<div class="destination-item__plus">
+													<div class="destination-item__plus-line"></div>
+													<div class="destination-item__plus-line"></div>
+												</div>
+											</div>
+							
+											<div class="destination-item__content">
+												<table class="table">
+													<tr>
+														<th>City</th>
+														<th>Hotel Name</th>
+														<th>Rating (Out of 5)</th>
+													</tr>
+													<tr>
+														<td colspan="3" class="text-center">
+															<b>
+																First Class
+															</b>
+															</td>
+													</tr>
+													<tr>
+														<td>Rabat</td>
+														<td>The View</td>
+														<td>4.5</td>
+													</tr>
+													<tr>
+														<td>Fez</td>
+														<td>Palais Médina</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<td>Casablanca</td>
+														<td>Barcelo	</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<td>Marrakech</td>
+														<td>Jaal Riad</td>
+														<td>4</td>
+													</tr>
+													<tr>
+														<td colspan="3" class="text-center note">Hotels will be confirmed at time of booking</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<!-- end destination item -->
+
+										
+
+										<!-- start destination item -->
+										<div class="destination-item destination-item--table">
+											<div class="destination-item__header">
+												<div class="destination-item__title">
+													Tour Prices
+												</div>
+							
+												<div class="destination-item__plus">
+													<div class="destination-item__plus-line"></div>
+													<div class="destination-item__plus-line"></div>
+												</div>
+											</div>
+							
+											<div class="destination-item__content">
+												<table class="table">
+													<thead>
+														<tr>
+															<th rowspan="2"># in party</th>
+															<th colspan="2">2-3 pax</th>
+															<th colspan="2">4-5 pax</th>
+															<th colspan="2">6-9 pax</th>
+															<th colspan="2">10 pax</th>
+														</tr>
+														<tr>
+															<th>Double</th>
+															<th>Single</th>
+															<th>Double</th>
+															<th>Single</th>
+															<th>Double</th>
+															<th>Single</th>
+															<th>Double</th>
+															<th>Single</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="header-bg">
+															<td colspan="9">First Class</td>
+														</tr>
+														<tr>
+															<td>Apr</td>
+															<td>$3,809</td>
+															<td>$4,875</td>
+															<td>$2,569</td>
+															<td>$3,635</td>
+															<td>$2,159</td>
+															<td>$3,225</td>
+															<td>$1,829</td>
+															<td>$2,895</td>
+														</tr>
+														<tr class="alt-bg">
+															<td>May-Jun</td>
+															<td>$3,999</td>
+															<td>$5,065</td>
+															<td>$2,699</td>
+															<td>$3,765</td>
+															<td>$2,265</td>
+															<td>$3,335</td>
+															<td>$1,919</td>
+															<td>$2,985</td>
+														</tr>
+														<tr>
+															<td>Jul-Aug</td>
+															<td>$3,809</td>
+															<td>$4,875</td>
+															<td>$2,569</td>
+															<td>$3,635</td>
+															<td>$2,159</td>
+															<td>$3,225</td>
+															<td>$1,829</td>
+															<td>$2,895</td>
+														</tr>
+														<tr class="alt-bg">
+															<td>Sep-Oct</td>
+															<td>$3,999</td>
+															<td>$5,065</td>
+															<td>$2,699</td>
+															<td>$3,765</td>
+															<td>$2,265</td>
+															<td>$3,335</td>
+															<td>$1,919</td>
+															<td>$2,985</td>
+														</tr>
+														<tr>
+															<td colspan="9" class="note">Prices are valid through October ’24, are per person and may change without notice</td>
+														</tr>
+														
+													</tbody>
+												</table>				
+											</div>
+										</div>
+										<!-- end destination item -->
+
+										<!-- start destination item -->
+										<div class="destination-item">
+											<div class="destination-item__header">
+												<div class="destination-item__title">
+													Groups
+												</div>
+							
+												<div class="destination-item__plus">
+													<div class="destination-item__plus-line"></div>
+													<div class="destination-item__plus-line"></div>
+												</div>
+											</div>
+							
+											<div class="destination-item__content">
+													<p>
+														<strong>
+															Bring your own Group to Morocco!
+														</strong>
+													</p>
+													<p>
+														Leaders with 15 or more passengers travel free
+													</p>
+													<p>
+														For Group inquiries, please call us at 1.855.558.6877 or submit an online Group Quote Request. A specialist will provide you with a quote within 2 business days. Quotes may be obtained for the air and land portions of the itinerary.
+													</p>							
+											</div>
+										</div>
+										<!-- end destination item -->
+
+										<!-- start destination item -->
+										<div class="destination-item ">
+											<div class="destination-item__header">
+												<div class="destination-item__title">
+													Build Your Own
+												</div>
+							
+												<div class="destination-item__plus">
+													<div class="destination-item__plus-line"></div>
+													<div class="destination-item__plus-line"></div>
+												</div>
+											</div>
+							
+											<div class="destination-item__content">
+												<p>Text here</p>
+																				
+											</div>
+										</div>
+										<!-- end destination item -->
+
+
+
+				</div>
+
+				
+
+			</div>
+
+			<div class="col-lg-6">
+
+				<!-- start img item -->
+				<div class="itineray-img-item">
+					<img src="img/m.jpeg" alt="">
+				</div>
+				<!-- end img item -->
+			</div>
+
+		</div>
+		
+	</div>
+</section>
+<!-- end destination page -->
+
+<section class="section map">
+<div class="container">
+	<img src="img/map.png" alt="" class="map-img">
+</div>
+</section>
+
+<!-- start slider section -->
+<section class="slider-section section">
+	<div class="">
+		<div class="container">
+	
+		</div>
+		<div class="multu-slider-wrapper multu-slider-wrapper--in">
+			<div class="multu-arrows">
+				<div class="container">
+					<div class="multu-prev">
+				<img src="img/arrow-prev-b.svg" alt="">
+			</div>
+			<div class="multu-next">
+				<img src="img/arrow-next-b.svg" alt="">
+			</div>
+				</div>
+			</div>
+			
+			
+			<div class="multu-slider">
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m1.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m2.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m3.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m4.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m5.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m6.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m7.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m8.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m9.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m10.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m11.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="img/m12.jpg" alt="" class="multu-slider__item-img">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end slider section -->
+
+<!-- start footer section -->
+<footer class="footer">
+	<div class="container">
+
+		<div class="footer__col">
+			<div class="footer__menu">
+
+				<a href="tour-conditions.html" class="footer__link">
+					TOUR CONDITIONS
+				</a>
+
+				<a href="general-sales-terms-conditions.html" class="footer__link">
+					GENERAL SALES TERMS & CONDITIONS
+				</a>
+
+				<a href="privacy-statement.html" class="footer__link">
+					PRIVACY STATEMENT
+				</a>
+
+			</div>
+		</div>
+
+		<div class="footer__col">
+			<div class="footer-form">
+				<div class="footer-form__title">
+					Sign up to receive news and updates.
+				</div>
+				<form action="" class="footer__form">
+					<input type="text" placeholder="Email Adress" class="">
+					<input type="submit" value="Sign Up" class="submit-button">
+				</form>
+			</div>
+
+			<div class="copy">
+				Copy text lorem, ipsum dolor 2024
+			</div>
+		</div>
+
+	</div>
+</footer>
+<!-- end footer section -->
+
+<script src="js/jQuery.js"></script>
+<script src="js/slick.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

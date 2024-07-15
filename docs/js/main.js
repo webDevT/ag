@@ -5,6 +5,11 @@ $(function(){
         $('.header__right').toggleClass('active');
     })
 
+    $('.destination-item__header').click(function(){
+        $(this).parent().find('.destination-item__content').slideToggle();
+        $(this).toggleClass('active');
+    })
+
 
 
 

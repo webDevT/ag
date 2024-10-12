@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>AvantGarde Vacations</title>
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-<link rel="stylesheet" href="css/slick.css">
-<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
-<body>
+
 
 <!-- start header -->
 <header class="header">
@@ -21,8 +21,8 @@
 		
 		<div class="header__content">
 			
-			<a href="/" class="header__logo">
-			<img src="img/logo.png" alt="">
+			<a href="index.html" class="header__logo">
+			<img src="assets/img/logo.png" alt="">
 		</a>
 
 			<div class="menu-btn">
@@ -30,7 +30,11 @@
 				<div class="menu-row"></div>
 			</div>
 
-			<div class="header__right">
+	<!-- <img src="assets/img/beta.png" alt="" class="beta">			 -->
+
+		<div class="header__right">
+
+				
 				<div class="menu">
 					<ul>
 	
@@ -85,9 +89,23 @@
 							<a href="agents-corner.html">AGENTS CORNER</a>
 						</li> -->
 	
-						<li>
+						<li class="sub-menu-item">
 							<a href="trip-request.html">TRIP REQUEST
 							</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="tour-request.html">
+										FIT Request Form
+									</a>
+								</li>
+
+								<li>
+									<a href="form.html">
+										Group Request Form
+									</a>
+								</li>
+
+							</ul>
 						</li>
 	
 						
@@ -95,21 +113,40 @@
 					</ul>
 				</div>
 				<div class="social">
-					<a href="">
-						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M11.3035 5.77319C8.198 5.77319 5.69311 8.27808 5.69311 11.3835C5.69311 14.489 8.198 16.9939 11.3035 16.9939C14.4089 16.9939 16.9138 14.489 16.9138 11.3835C16.9138 8.27808 14.4089 5.77319 11.3035 5.77319ZM11.3035 15.031C9.29663 15.031 7.65601 13.3953 7.65601 11.3835C7.65601 9.37183 9.29175 7.73608 11.3035 7.73608C13.3152 7.73608 14.9509 9.37183 14.9509 11.3835C14.9509 13.3953 13.3103 15.031 11.3035 15.031ZM18.4519 5.5437C18.4519 6.27124 17.866 6.8523 17.1433 6.8523C16.4158 6.8523 15.8347 6.26636 15.8347 5.5437C15.8347 4.82104 16.4207 4.23511 17.1433 4.23511C17.866 4.23511 18.4519 4.82104 18.4519 5.5437ZM22.1677 6.87183C22.0847 5.1189 21.6843 3.56616 20.4001 2.28687C19.1208 1.00757 17.5681 0.607178 15.8152 0.519287C14.0085 0.416748 8.59351 0.416748 6.78687 0.519287C5.03882 0.602295 3.48608 1.00269 2.2019 2.28198C0.917725 3.56128 0.522217 5.11401 0.434326 6.86694C0.331787 8.67358 0.331787 14.0886 0.434326 15.8953C0.517334 17.6482 0.917725 19.2009 2.2019 20.4802C3.48608 21.7595 5.03394 22.1599 6.78687 22.2478C8.59351 22.3503 14.0085 22.3503 15.8152 22.2478C17.5681 22.1648 19.1208 21.7644 20.4001 20.4802C21.6794 19.2009 22.0798 17.6482 22.1677 15.8953C22.2703 14.0886 22.2703 8.67847 22.1677 6.87183ZM19.8337 17.8337C19.4529 18.7908 18.7156 19.5281 17.7537 19.9138C16.3132 20.4851 12.8953 20.3533 11.3035 20.3533C9.71167 20.3533 6.28882 20.4802 4.85327 19.9138C3.89624 19.533 3.15894 18.7957 2.77319 17.8337C2.2019 16.3933 2.33374 12.9753 2.33374 11.3835C2.33374 9.79175 2.20679 6.3689 2.77319 4.93335C3.15405 3.97632 3.89136 3.23901 4.85327 2.85327C6.2937 2.28198 9.71167 2.41382 11.3035 2.41382C12.8953 2.41382 16.3181 2.28687 17.7537 2.85327C18.7107 3.23413 19.448 3.97144 19.8337 4.93335C20.405 6.37378 20.2732 9.79175 20.2732 11.3835C20.2732 12.9753 20.405 16.3982 19.8337 17.8337Z"/>
-							</svg>
-					</a>
-					<a href="">
-						<svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M12.6099 14.6841L13.3042 10.1597H8.96289V7.22363C8.96289 5.98584 9.56934 4.7793 11.5137 4.7793H13.4873V0.927246C13.4873 0.927246 11.6963 0.621582 9.98389 0.621582C6.40869 0.621582 4.07178 2.78857 4.07178 6.71143V10.1597H0.0976562V14.6841H4.07178V25.6216H8.96289V14.6841H12.6099Z"/>
-							</svg>
-					</a>
+					<figure class="image">
+						<a href="assets/img/inst.png" target="_blank"><img style="aspect-ratio:1079/1080;" src="https://avantgardevacations.com/storage/editor/images/instagram.png" width="23" height="23" hspace="2"></a>
+					</figure>
+					<figure class="image">
+						<a href="https://www.facebook.com/avantgardevacations" target="_blank"><img style="aspect-ratio:579/1068;" src="assets/img/fb.png" width="23" height="23"></a>
+					</figure>
+					<figure class="image">
+						<a href="https://www.linkedin.com/company/avantgarde-vacations/?viewAsMember=true" target="_blank"><img style="aspect-ratio:571/560;" src="assets//img/in.png" width="23" height="23"></a>
+					</figure>
 				</div>
 
-				<a href="registration.html" class="button-transparent">
-					Register
-				</a>
+				<div class="greating-wrapper">
+
+					<!-- <div class="greating">
+						Hello, <span>Joe Doe!</span>
+					</div> -->
+					
+					<div class="header__buttons">
+						<a href="advisors-portal.html" class="button-transparent button--center">
+	
+							<!-- <img src="assets/img/registration.svg" alt=""> -->
+							Advisors <br>
+							Registration
+						</a>
+						<a href="advisors-portal.html" class="button-transparent">
+							<img src="assets/img/login.svg" alt="">
+						Login to <br>
+						Advisors Portal
+		
+						</a>
+					</div>
+				</div>
+				
+				
 			</div>
 		</div>
 	</div>
@@ -133,14 +170,17 @@
 							<span>Curated, Private Itineraries</span>
 							 and <span>Personal Guides</span>
 						</div>
+						<!-- <div class="sub-title">
+							<span>Lorem ipsum dolor sit amet.</span>
+						</div>
 						<p class="italic">
 							Every trip is customizable, complete with airport transfers, drivers, privately guided tours, and expert advice, guaranteeing a seamless experience, with support every step of the way.
 						</p>
 						<a href="#" class="button">
 							Book Now
-						</a>
+						</a> -->
 					</div>											
-					<img src="img/slide1.jpg" alt="" class="slider-item__img">
+					<img src="assets/img/slide1.jpg" alt="" class="slider-item__img">
 				</div>
 				<!-- end slider item 1 -->
 
@@ -154,14 +194,17 @@
 						<span>Curated, Private Itineraries</span>
 						 and <span>Personal Guides</span>
 					</div>
+					<!-- <div class="sub-title">
+						<span>Lorem ipsum dolor sit amet.</span>
+					</div>
 					<p class="italic">
 						Every trip is customizable, complete with airport transfers, drivers, privately guided tours, and expert advice, guaranteeing a seamless experience, with support every step of the way.
 					</p>
 					<a href="" class="button">
 						Book Now
-					</a>
+					</a> -->
 				</div>											
-				<img src="img/slide2.jpg" alt="" class="slider-item__img">
+				<img src="assets/img/slide2.jpg" alt="" class="slider-item__img">
 			</div>
 			<!-- end slider item 2 -->
 
@@ -175,14 +218,17 @@
 					<span>Curated, Private Itineraries</span>
 					 and <span>Personal Guides</span>
 				</div>
+				<!-- <div class="sub-title">
+					<span>Lorem ipsum dolor sit amet.</span>
+				</div>
 				<p class="italic">
 					Every trip is customizable, complete with airport transfers, drivers, privately guided tours, and expert advice, guaranteeing a seamless experience, with support every step of the way.
 				</p>
 				<a href="" class="button">
 					Book Now
-				</a>
+				</a> -->
 			</div>											
-			<img src="img/slide3.jpg" alt="" class="slider-item__img">
+			<img src="assets/img/slide3.jpg" alt="" class="slider-item__img">
 		</div>
 		<!-- end slider item 3 -->
 
@@ -196,14 +242,14 @@
 							<span>Curated, Private Itineraries</span>
 							 and <span>Personal Guides</span>
 						</div>
-						<p class="italic">
+						<!-- <p class="italic">
 							Every trip is customizable, complete with airport transfers, drivers, privately guided tours, and expert advice, guaranteeing a seamless experience, with support every step of the way.
 						</p>
 						<a href="" class="button">
 							Book Now
-						</a>
+						</a> -->
 					</div>											
-					<img src="img/slide4.jpeg" alt="" class="slider-item__img">
+					<img src="assets/img/slide4.jpeg" alt="" class="slider-item__img">
 				</div>
 				<!-- end slider item 4 -->
 
@@ -217,25 +263,25 @@
 						<span>Curated, Private Itineraries</span>
 						 and <span>Personal Guides</span>
 					</div>
-					<p class="italic">
+					<!-- <p class="italic">
 						Every trip is customizable, complete with airport transfers, drivers, privately guided tours, and expert advice, guaranteeing a seamless experience, with support every step of the way.
 					</p>
 					<a href="" class="button">
 						Book Now
-					</a>
+					</a> -->
 				</div>											
-				<img src="img/slide5.jpeg" alt="" class="slider-item__img">
+				<img src="assets/img/slide5.jpeg" alt="" class="slider-item__img">
 			</div>
 			<!-- end slider item 5 -->
 
 			</div>
 
-			<div class="prev">
-				<img src="img/prev.svg" alt="">
+			<!-- <div class="prev">
+				<img src="assets/img/prev.svg" alt="">
 			</div>
 			<div class="next">
-				<img src="img/next.svg" alt="">
-			</div>
+				<img src="assets/img/next.svg" alt="">
+			</div> -->
 
 		</div>
 	
@@ -244,56 +290,70 @@
 
 <!-- start our destination -->
 <section class="our-destination section">
-	<div class="container container--xs">
-		<div class="row">
+	<div class="container">
+		<div class="our-destination__row">
 
-			<div class="col-lg-3 col-md-6">
+		
 				<a href="" class="our-destination__item">
 					<div class="our-destination__item-img-wrapper">
-					<img src="img/d1.jpg" alt="" class="our-destination__item-img">	
+					<img src="assets/img/d1.jpg" alt="" class="our-destination__item-img">	
 					</div>
 					
 					<div class="our-destination__item-title">
 						AFRICA
 					</div>
 				</a>
-			</div>
+			
 
-			<div class="col-lg-3 col-md-6">
+	
 				<a href="" class="our-destination__item">
 					<div class="our-destination__item-img-wrapper">
-						<img src="img/d2.jpg" alt="" class="our-destination__item-img">
+						<img src="assets/img/d2.jpg" alt="" class="our-destination__item-img">
 					</div>
 					
 					<div class="our-destination__item-title">
-						ASIA
+						ASIA & PACIFIC
 					</div>
 				</a>
-			</div>
+		
 
-			<div class="col-lg-3 col-md-6">
+
 				<a href="" class="our-destination__item">
 					<div class="our-destination__item-img-wrapper">
-						<img src="img/d3.jpg" alt="" class="our-destination__item-img">
+						<img src="assets/img/d3.jpg" alt="" class="our-destination__item-img">
 					</div>
 					
 					<div class="our-destination__item-title">
 						EUROPE
 					</div>
 				</a>
-			</div>
+		
 
-			<div class="col-lg-3 col-md-6">
+			
 				<a href="" class="our-destination__item">
 					<div class="our-destination__item-img-wrapper">
-						<img src="img/d4.jpg" alt="" class="our-destination__item-img">
+						<img src="assets/img/d4.jpg" alt="" class="our-destination__item-img">
 					</div>
 					
 					<div class="our-destination__item-title">
 						MIDDLE EAST
 					</div>
 				</a>
-			</div>
+		
+
+		
+				<a href="" class="our-destination__item">
+					<div class="our-destination__item-img-wrapper">
+						<img src="assets/img/d5.png" alt="" class="our-destination__item-img">
+					</div>
+					
+					<div class="our-destination__item-title">
+						SOUTH AMERICA
+					</div>
+				</a>
+		
+			
+			
 
 		</div>
 
@@ -325,7 +385,7 @@
 						Our knowledgeable destination specialists can craft personalized dream vacations tailored to the unique preferences of each traveler, couple, or group.
 					</p>
 					<div class="img-wrapper">
-						<img src="img/i1.jpg" alt="" class="item-img">
+						<img src="assets/img/i1.jpg" alt="" class="item-img">
 					</div>					
 				</a>
 			</div>
@@ -339,7 +399,7 @@
 						Save with preset itineraries. Hotel, transportation and activities are vetted and packaged with care. More upfront savings means more spending money for the adventure!
 					</p>
 					<div class="img-wrapper">
-						<img src="img/i2.jpg" alt="" class="item-img">
+						<img src="assets/img/i2.jpg" alt="" class="item-img">
 					</div>					
 				</a>
 			</div>
@@ -353,7 +413,7 @@
 						We work with Groups of any size, traveling anywhere in the world. From friends and families traveling together to organized groups, our team is ready to assist.
 					</p>
 					<div class="img-wrapper">
-						<img src="img/i3.jpg" alt="" class="item-img">
+						<img src="assets/img/i3.jpg" alt="" class="item-img">
 					</div>					
 				</a>
 			</div>
@@ -368,7 +428,7 @@
 	<div class="container">
 		
 		<div class="designer-section__img-content">
-			<img src="img/image-asset.jpeg" alt="" class="designer-section__img">
+			<img src="assets/img/image-asset.jpeg" alt="" class="designer-section__img">
 			
 		</div>
 		<div class="designer-section__text-wrapper">
@@ -380,11 +440,11 @@
 			<p>hotel budget, but</p>
 			<p><b>everyone</b> deserves a <b>5-Star vacation experience</b></p>
 			<div class="start">
-				<img src="img/star.svg" alt="">
-				<img src="img/star.svg" alt="">
-				<img src="img/star.svg" alt="">
-				<img src="img/star.svg" alt="">
-				<img src="img/star.svg" alt="">
+				<img src="assets/img/star.svg" alt="">
+				<img src="assets/img/star.svg" alt="">
+				<img src="assets/img/star.svg" alt="">
+				<img src="assets/img/star.svg" alt="">
+				<img src="assets/img/star.svg" alt="">
 			</div>
 		</div>
 	</div>
@@ -403,7 +463,7 @@
 			<div class="col-lg-3 col-md-6 col-6">
 				<a href="" class="sport-section__item">
 					<div class="sport-section__item-img-wrapper">
-						<img src="img/s1.jpeg" alt="" class="sport-section__item-img">
+						<img src="assets/img/s1.jpeg" alt="" class="sport-section__item-img">
 					</div>
 					<div class="sport-section__item-title">
 						Soccer
@@ -414,7 +474,7 @@
 			<div class="col-lg-3 col-md-6 col-6">
 				<a href="" class="sport-section__item">
 					<div class="sport-section__item-img-wrapper">
-						<img src="img/s2.jpeg" alt="" class="sport-section__item-img">
+						<img src="assets/img/s2.jpeg" alt="" class="sport-section__item-img">
 					</div>
 					<div class="sport-section__item-title">
 						Formula 1
@@ -425,7 +485,7 @@
 			<div class="col-lg-3 col-md-6 col-6">
 				<a href="" class="sport-section__item">
 					<div class="sport-section__item-img-wrapper">
-						<img src="img/s3.jpeg" alt="" class="sport-section__item-img">
+						<img src="assets/img/s3.jpeg" alt="" class="sport-section__item-img">
 					</div>
 					<div class="sport-section__item-title">
 						Yachts and Cruises
@@ -438,7 +498,7 @@
 			<div class="col-lg-3 col-md-6 col-6">
 				<a href="" class="sport-section__item">
 					<div class="sport-section__item-img-wrapper">
-						<img src="img/s4.jpeg" alt="" class="sport-section__item-img">
+						<img src="assets/img/s4.jpeg" alt="" class="sport-section__item-img">
 					</div>
 					<div class="sport-section__item-title">
 						Spiritual Journeys
@@ -455,15 +515,15 @@
 <section class="section luxury-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-lg-6">
 				<div class="h1 h1--black">
 					Luxury for <span>all</span>
 				</div>
 				<div class="image-wrapper">
-					<img src="img/image.jpg" alt="">
+					<img src="assets/img/image.jpg" alt="">
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-6">
 				<h3 class="h3">
 					At AG, <i>luxury</i> means crafting a vacation experience as distinct as the individual planning it
 				</h3>
@@ -493,7 +553,7 @@
 <!-- start banner section -->
 <section class="banner-section">
 	<div class="container">
-		<a href=""><img src="img/baner.jpg" alt="" class="banner"></a>
+		<a href=""><img src="assets/img/baner.jpg" alt="" class="banner"></a>
 		<a href="" class="banner-link">
 			Featured partners
 		</a>
@@ -503,9 +563,9 @@
 <!-- end banner setion -->
 
 <!-- start slider section -->
-<section class="slider-section section">
+<section class="slider-section section container">
 	<div class="">
-		<div class="container">
+		<div class="">
 			<h2 class="h2">
 				Trending Destinations 
 			</h2>
@@ -514,10 +574,10 @@
 			<div class="multu-arrows">
 				<div class="container">
 					<div class="multu-prev">
-				<img src="img/arrow-prev.svg" alt="">
+				<img src="assets/img/arrow-prev.svg" alt="">
 			</div>
 			<div class="multu-next">
-				<img src="img/arrow-next.svg" alt="">
+				<img src="assets/img/arrow-next.svg" alt="">
 			</div>
 				</div>
 			</div>
@@ -527,7 +587,7 @@
 
 				<div class="multu-slider__item">
 					<div class="multu-slider__item-img-wrapper">
-						<img src="img/image1.jpeg" alt="" class="multu-slider__item-img">
+						<img src="assets/img/image1.png" alt="" class="multu-slider__item-img">
 					</div>
 					
 					<div class="multu-slider__title">
@@ -537,7 +597,17 @@
 
 				<div class="multu-slider__item">
 					<div class="multu-slider__item-img-wrapper">
-						<img src="img/image2.jpeg" alt="" class="multu-slider__item-img">
+						<img src="assets/img/image1.png" alt="" class="multu-slider__item-img">
+					</div>
+					
+					<div class="multu-slider__title">
+						Italy.
+					</div>
+				</div>
+
+				<div class="multu-slider__item">
+					<div class="multu-slider__item-img-wrapper">
+						<img src="assets/img/image2.png" alt="" class="multu-slider__item-img">
 					</div>
 					
 					<div class="multu-slider__title">
@@ -547,7 +617,7 @@
 
 				<div class="multu-slider__item">
 					<div class="multu-slider__item-img-wrapper">
-						<img src="img/image3.jpeg" alt="" class="multu-slider__item-img">
+						<img src="assets/img/image3.png" alt="" class="multu-slider__item-img">
 					</div>
 					
 					<div class="multu-slider__title">
@@ -557,13 +627,15 @@
 
 				<div class="multu-slider__item">
 					<div class="multu-slider__item-img-wrapper">
-						<img src="img/image4.jpeg" alt="" class="multu-slider__item-img">
+						<img src="assets/img/image1.png" alt="" class="multu-slider__item-img">
 					</div>
 					
 					<div class="multu-slider__title">
 						Morocco.
 					</div>
 				</div>
+
+				
 				
 			</div>
 		</div>
@@ -571,8 +643,124 @@
 </section>
 <!-- end slider section -->
 
+<section class="section best-sell">
+	<div class="container">
+		<h2 class="h2 text-center h2--white">
+			Best-selling Itineraries 
+		</h2>
+
+		<div class="row">
+			<!-- start single country item -->
+			<div class="col-lg-3">
+				<div class="best-selling__item single-country__item">
+					<img src="assets/img/sc5.jpg" alt="" class="best-selling__item-img">
+					<div class="best-selling__item-content">
+						<div class="best-selling__item-title">
+							Umrah Express
+							<span>
+								A Spirital Journey
+							</span>
+						</div>
+						<p>
+							8 Days - 7 Nights
+						</p>
+						<p>
+							Casablanca, Fez, Volubilis, Meknes, Rabat, Marrakech, Agafay
+						</p>
+						<p class="best-selling__item-footer">
+							from $2,739 per person
+						</p>						
+					</div>
+					<a href="itinerary.html" class="button">View Details</a>
+				</div>
+			</div>
+			<!-- end single country item -->
+
+					<!-- start single country item -->
+			<div class="col-lg-3">
+				<div class="best-selling__item single-country__item">
+					<img src="assets/img/sc2.jpg" alt="" class="best-selling__item-img">
+					<div class="best-selling__item-content">
+						<div class="best-selling__item-title">
+							Umrah Express
+							<span>
+								A Spirital Journey
+							</span>
+						</div>
+						<p>
+							11 Days - 10 Nights
+						</p>
+						<p>
+							Casablanca, Rabat, Tangier, Chefchaouen, Meknes, Volubilis, Fez, Midelt, Erfoud, Merzouga, Todra, Ouarzazate, Marrackech, Ait benhaddou
+						</p>
+						<p class="best-selling__item-footer">
+							from $2,565 per person
+
+
+						</p>						
+					</div>
+					<a href="itinerary.html" class="button">View Details</a>
+				</div>
+			</div>
+			<!-- end single country item -->
+
+			<!-- start single country item -->
+			<div class="col-lg-3">
+				<div class="best-selling__item single-country__item">
+					<img src="assets/img/sc3.jpg" alt="" class="best-selling__item-img">
+					<div class="best-selling__item-content">
+						<div class="best-selling__item-title">
+							Umrah Express
+							<span>
+								A Spirital Journey
+							</span>
+						</div>
+						<p>
+							12 Days - 11 Nights
+						</p>
+						<p>
+							Marrakech, Ait Benhaddou, Boumalne Dades, Todra Gorge, Erfoud, Rissani, Erg Chebbi, Ouarzazate, Agadir, Essaouira, Casablanca
+						</p>
+						<p class="best-selling__item-footer">
+							from $3,929 per person
+						</p>						
+					</div>
+					<a href="itinerary.html" class="button">View Details</a>
+				</div>
+			</div>
+			<!-- end single country item -->
+
+			<!-- start single country item -->
+			<div class="col-lg-3">
+				<div class="best-selling__item single-country__item">
+					<img src="assets/img/sc4.jpg" alt="" class="best-selling__item-img">
+					<div class="best-selling__item-content">
+						<div class="best-selling__item-title">
+							Umrah Express
+							<span>
+								A Spirital Journey
+							</span>
+						</div>
+						<p>
+							12 Days - 11 Nights
+						</p>
+						<p>
+							Casablanca, Rabat, Volubilis, Fez, Erfoud, Rissani, Todgha, Dades, Ouarzazate, Marrakech
+						</p>
+						<p class="best-selling__item-footer">
+							from $3,989 per person
+						</p>						
+					</div>
+					<a href="itinerary.html" class="button">View Details</a>
+				</div>
+			</div>
+			<!-- end single country item -->
+		</div>
+	</div>
+</section>
+
 <!-- start best selling section -->
-<section class="best-selling section">
+<!-- <section class="best-selling section">
 	<div class="container">
 		<div class="section-header">
 			<h2 class="h2 h2--black">
@@ -587,14 +775,14 @@
 
 			<div class="col-lg-6">
 				<div class="best-selling__item">
-					<img src="img/bs1.jpeg" alt="" class="best-selling__item-img">
+					<img src="assets/img/bs1.jpeg" alt="" class="best-selling__item-img">
 					<div class="best-selling__item-content">
 						<div class="best-selling__item-title">
 							Classic Morocco
 						</div>
 
 						<p>
-							10 Days - 9 Nights
+							10 Days - 9 Nights 
 						</p>
 						<p>
 							Rabat, Volubilis, Fez, Meknes, Casablanca, Marrakech
@@ -614,7 +802,7 @@
 
 			<div class="col-lg-6">
 				<div class="best-selling__item">
-					<img src="img/bs2.jpeg" alt="" class="best-selling__item-img">
+					<img src="assets/img/bs2.jpeg" alt="" class="best-selling__item-img">
 					<div class="best-selling__item-content">
 						<div class="best-selling__item-title">
 							Italy’s Jewels of the South
@@ -641,7 +829,7 @@
 
 			<div class="col-lg-6">
 				<div class="best-selling__item">
-					<img src="img/bs3.jpeg" alt="" class="best-selling__item-img">
+					<img src="assets/img/bs3.jpeg" alt="" class="best-selling__item-img">
 					<div class="best-selling__item-content">
 						<div class="best-selling__item-title">
 							Explore Cappadocia 
@@ -670,7 +858,7 @@
 
 			<div class="col-lg-6">
 				<div class="best-selling__item">
-					<img src="img/bs4.jpeg" alt="" class="best-selling__item-img">
+					<img src="assets/img/bs4.jpeg" alt="" class="best-selling__item-img">
 					<div class="best-selling__item-content">
 						<div class="best-selling__item-title">
 							Complete Saudi Arabia 
@@ -700,7 +888,7 @@
 		</div>
 		
 	</div>
-</section>
+</section> -->
 <!-- end best selling section -->
 
 <!-- start integrity section -->
@@ -714,11 +902,11 @@
 					AvantGarde Vacations is an active member of the United States Tour Operators Association (USTOA). The USTOA $1 Million Travelers Assistance Program protects consumers for up to $1,000,000 in the aggregate from loss of deposits and payments for tours or vacation packages in the event of a USTOA Active Member bankruptcy, insolvency or cessation of business or the material failure to complete performance of tour(s) or vacation package(s).
 				</p>
 
-				<img src="img/integration-logo.jpg" alt="" class="integration-logo">
+				<img src="assets/img/integration-logo.jpg" alt="" class="integration-logo">
 			</div>
 		</div>
 		<div class="integrity__img-wrapper">
-			<img src="img/integrity.jpg" alt="">
+			<img src="assets/img/integrity.jpg" alt="">
 		</div>
 </section>
 <!-- end integrity section -->
@@ -727,30 +915,34 @@
 <section class="images-section">
 	<div class="images-section__col">
 		<div class="images-section__img">
-			<img src="img/i1.jpeg" alt="">
+			<img src="assets/img/i1.jpeg" alt="">
 		</div>
 
 		<div class="images-section__img">
-			<img src="img/i2.jpeg" alt="">
+			<img src="assets/img/i2.jpeg" alt="">
 		</div>
 
 		<div class="images-section__img">
-			<img src="img/i3.jpeg" alt="">
+			<img src="assets/img/i3.jpeg" alt="">
 		</div>
 
 		<div class="images-section__img">
-			<img src="img/i4.jpeg" alt="">
+			<img src="assets/img/i4.jpeg" alt="">
 		</div>
 
 	</div>
 	<div class="images-section__col">
 
 		<div class="images-section__img">
-			<img src="img/i5.jpeg" alt="">
+			<img src="assets/img/i5.jpeg" alt="">
 		</div>
 
 		<div class="images-section__img">
-			<img src="img/i6.jpeg" alt="">
+			<img src="assets/img/i6.jpeg" alt="">
+		</div>
+
+		<div class="images-section__img">
+			<img src="assets/img/i11.png" alt="">
 		</div>
 
 	</div>
@@ -791,6 +983,17 @@
 		</div>
 
 		<div class="footer__col">
+			<div class="footer_item">
+				Email: <a href="mailto:bookings@avantgardevacations.com ">bookings@avantgardevacations.com </a> 
+			</div>
+			<div class="footer_item">
+			Phone: 1.855.55.TOURS (1.855.557.6877)  
+			</div>
+			
+
+		</div>
+
+		<div class="footer__col">
 			<div class="footer-form">
 				<div class="footer-form__title">
 					Sign up to receive news and updates.
@@ -810,8 +1013,9 @@
 </footer>
 <!-- end footer section -->
 
-<script src="js/jQuery.js"></script>
-<script src="js/slick.js"></script>
-	<script src="js/main.js"></script>
+<script src="assets/js/jQuery.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>

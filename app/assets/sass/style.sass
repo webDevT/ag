@@ -1647,6 +1647,55 @@ input[type="checkbox"]
         max-width: 70%
 //end advisors portal style 
 
+//start modal style 
+.button 
+    cursor: pointer
+.modal-window
+    position: fixed 
+    top: 0 
+    right: 0 
+    width: 100% 
+    height: 100% 
+    background: rgba(0, 0, 0, 0.8)
+    z-index: 999
+    display: none
+.modal-window__content
+    background: #fff
+    width: 450px 
+    max-width: 90% 
+    position: absolute
+    top: 50%
+    left: 50% 
+    transform: translateX(-50%) translateY(-50%)
+    padding: 40px 30px
+    padding-top: 20px
+    border-radius: 10px
+    .buttons-wrapper 
+        width: 100%
+        display: flex 
+        justify-content: space-between 
+        .button 
+            width: 46%
+            margin-left: 0 
+            margin-right: 0
+.button--transparent
+    background: transparent 
+    border: 1px solid $red
+    color: $red
+    font-weight: 500
+.button--transparent:hover 
+    background: $red
+.close-wrapper
+    display: flex 
+    justify-content: flex-end
+    width: 100%
+    margin-bottom: 20px
+    img
+        width: 20px
+.close-btn
+    cursor: pointer
+//end modal style 
+
 @import "media"
 
 

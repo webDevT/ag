@@ -183,9 +183,11 @@
 
 				<div class="book-wrapper">
 					<div class="itineray-dates">
-					10 Days | 9 Nights - Rabat, Volubilis, Fez, Meknes, Casablanca, Marrakech</div><a href="" class="button">
+					10 Days | 9 Nights - Rabat, Volubilis, Fez, Meknes, Casablanca, Marrakech</div>
+					
+					<div class="button book-now">
 					Book Now
-				</a>
+				</div>
 				</div>
 
 				
@@ -883,8 +885,44 @@ Note: Special airfares are available through us from all USA gateways</p>
 </footer>
 <!-- end footer section -->
 
+<!-- start modal -->
+<div class="modal-window">
+	<div class="modal-window__content">
+		<div class="close-wrapper">
+			<div class="close-btn">
+				<img src="assets/img/close2.svg" alt="">
+			</div>
+		</div>
+		
+		<div class="buttons-wrapper">
+			<a href="" class="button">
+				Advisors Click Here
+			</a>
+			<a href="" class="button button--transparent">
+				Continue as a Guest
+			</a>
+		</div>
+	</div>
+</div>
+<!-- end modal -->
+
 <script src="assets/js/jQuery.js"></script>
 <script src="assets/js/slick.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+			$(document).ready(function() {
+		$('.book-now').click(function(){
+			$('.modal-window').fadeIn();
+		})
+		$('.close-btn').click(function(){
+			$('.modal-window').fadeOut();
+		})
+
+	
+  
+
+ 
+});
+	</script>
 </body>
 </html>

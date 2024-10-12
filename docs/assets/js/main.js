@@ -16,7 +16,12 @@ $(function(){
         $(this).parent().find('.destination-item__content').slideToggle();
         $(this).toggleClass('active');
     })
-
+    
+    $('.modal-window').on('click', function(e) {
+      if ($(e.target).closest('.modal-window__content').length === 0) {
+          $(this).fadeOut();
+      }
+  });
 
 
 

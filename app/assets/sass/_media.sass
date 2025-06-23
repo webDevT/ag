@@ -39,7 +39,23 @@
 		height: 602px
 	.header__buttons .button-transparent
 		width: 167px
+	//start new
+	.social a
+		margin-left: 10px
+	.social
+		margin-right: 10px
+	//end new
+
+	//start ns
+	.single-country-row .single-country__item .best-selling__item-content
+		max-width: calc(100% - 50px)
+	//end ns
+	.best-selling__item.single-country__item.best-selling__item--resort
+		.best-selling__item-content .best-selling__item-title
+			min-height: auto 
+			margin-bottom: 12px
 	
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 1170px)
 	/**/
@@ -48,9 +64,11 @@
 	.menu ul a
 		font-size: 12px
 	.social a
-		margin-left: 10px
+		margin-left: 7px
+	.beta 
+		height: 15px
 	.social
-		margin-right: 20px
+		margin-right: 10px
 	.button-transparent
 		font-size: 12px
 	.button 
@@ -73,6 +91,22 @@
 		font-size: 20px
 	.advisors-portal__img
 		height: 17vw
+	//start new group style
+	.group-destination-main
+		padding-top: 150px 
+		padding-bottom: 150px
+	//end new group style
+	.best-selling__item.single-country__item.best-selling__item--resort
+		line-height: 1.1
+		.button 
+			margin-right: 0
+			white-space: nowrap
+	.best-selling__item.single-country__item.best-selling__item--resort .best-selling__item-content p
+		line-height: 1.25
+	.best-selling__item.single-country__item.best-selling__item--resort
+		.best-selling__item-content
+			width: 100%
+			margin-right: 0
 	
 
 
@@ -352,6 +386,80 @@
 		height: 30vw
 	.advisors-portal__item-title
 		font-size: 26px
+	.news-content .container
+		flex-direction: column
+	.tabs-news
+		width: 100%
+	.tabs-news-content
+		width: 100%
+	.blog__image
+		height: 50vw
+	.blog-item 
+		margin-bottom: 30px
+	.blog-list
+		padding-top: 30px
+	.checkbox-wrapper
+		min-width: 175px
+	.inputs-row .input-wrapper--xl .checkbox-wrapper 
+		min-width: 150px
+	.inputs-row .input-wrapper--xl
+		flex-direction: column
+		align-items: flex-start
+		.label 
+			margin-bottom: 8px
+	.best-selling__item--resort
+		.best-selling__item-content
+			margin-left: 0 
+			margin-right: 0
+	.villas-section
+		.row 
+			flex-direction: column
+	.single-country-row .single-country__item
+		height: auto
+	.country-group__row
+		flex-direction: column
+		align-items: flex-start
+	.single-country-row .single-country__item .country-group__row .best-selling__item-content
+		max-width: 100% 
+		width: 100%
+	.country-group__row
+		width: 100%
+	.single-country-row .single-country__item .best-selling__item-img
+		height: 55vw
+	.group-section.section
+		padding-top: 0 
+		padding-bottom: 0
+	.journey
+		.container .row
+			flex-direction: column
+	.journey .col-lg-8 p
+		width: 100%
+	.journey-images-row
+		display: flex
+		justify-content: space-between
+		img 
+			width: 33%
+			height: 30vw
+	.journey-sidebar
+		width: 100%
+	.journey__img
+		height: 56vw
+	.journeys-title
+		.h2 
+			font-size: 24px
+			padding: 15px 15px
+	.section.journey
+		padding-top: 0
+	//start ns
+	.single-country-row .single-country__item .best-selling__item-content 
+		width: 100% 
+		max-width: 100%
+		height: auto
+	.group-section .single-country-row .single-country__item 
+		height: auto
+	//end ns
+
+
 
 
 
@@ -490,7 +598,7 @@
 	.blue-slogan
 		font-size: 24px
 	.team-multu-slider .multu-slider__item-img-wrapper 
-		height: 87vw
+		height: 118vw
 	.black-text-section
 		padding-top: 70px 
 		padding-bottom: 70px
@@ -507,7 +615,7 @@
 	.map
 		margin-top: 0
 	.itineray-img-item img
-		height: 75vw
+		//height: 75vw
 	.page-404 
 		min-height: 50vh 
 	.single-country__item .best-selling__item-content
@@ -578,7 +686,89 @@
 		margin-top: 0
 	.advisors-portal 
 		padding-bottom: 100px
-/* Custom, iPhone Retina */
+	.tab-news
+		flex-direction: column
+		padding-bottom: 10px 
+		padding-top: 10px 
+		margin-bottom: 0
+		border-bottom: 1px solid grey
+	.tabs-news
+		margin-bottom: 50px
+	.news-header
+		padding-top: 25px 
+		padding-bottom: 25px
+	.news-header 
+		.h1 
+			font-size: 40px
+			margin-bottom: 15px
+	.news-title
+		font-size: 20px 
+		line-height: 1.2
+		padding-top: 30px 
+		padding-bottom: 30px
+	.news-content
+		padding-top: 30px
+	.news__date
+		margin-bottom: 5px
+	.news__name 
+		text-transform: uppercase
+	.blog__image
+		height: 100vw
+	.blog-item__title 
+		font-size: 18px
+	.blog-header
+		.h2 
+			font-size: 28px
+	.best-selling__item--resort 
+		padding-right: 0
+	.room-item 
+		flex-direction: column
+	.room-col 
+		width: 100%
+	.room-img 
+		height: 55vw
+	.villas-section
+		padding-top: 0
+		.itineray--col 
+			padding-top: 0
+		.row
+			flex-direction: column
+	.villas-section .itineray-img-item
+		display: none
+	.multu-slider-wrapper--in .multu-slider__item-img-wrapper
+		height: 59vw
+	.multu-slider-wrapper 
+		padding-bottom: 0
+	.room-col:first-child
+		width: 100%
+	//start new group style
+	.group-destination-main
+		padding-top: 15vw 
+		padding-bottom: 15vw
+	.group-destination-main
+		.h1 
+			font-size: 46px
+	.black-text-section
+		padding-top: 40px 
+		padding-bottom: 40px
+	.group-cauntries
+		padding-top: 40px 
+		padding-bottom: 40px
+	.group-cauntries .col-lg-3
+		margin-bottom: 0
+	.sport-section__item-img-wrapper
+		border-radius: 10px
+	.input-wrapper--row
+		flex-direction: column 
+		align-items: flex-start
+	.input-wrapper--num-row .checkbox-row
+		margin-left: 0 
+		margin-top: 10px
+		.label 
+			min-width: 90px
+	.input-wrapper--num-row .checkbox-row
+		width: auto
+	//end new group style
 @media only screen and (max-width : 480px)
 	/**/	
 	.book-wrapper
@@ -596,6 +786,11 @@
 			.button 
 				width: 100% 
 				margin-bottom: 15px
+	.radio-wrap 
+		display: block 
+		margin-left: 0
+	
+	
 	
 	
 

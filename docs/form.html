@@ -45,25 +45,32 @@
 						<!-- start item with sub-menu -->
 						<li class="sub-menu-item">
 							<a href="about-us.html">ABOUT US</a>
+
 							<ul class="sub-menu">
 								<li>
 									<a href="our-origin-story.html">
-										Our Origin Story
+										Our Story
 									</a>
 								</li>
 
+								
+								<li>
+									<a href="news.html">
+										AVANTGARDE NEWS
+									</a>
+								</li>
+
+								<li>
+									<a href="blog.html">
+										AVANTGARDE BLOG
+									</a>
+								</li>
+								
 								<li>
 									<a href="meet-the-team.html">
 										Meet the Team
 									</a>
 								</li>
-
-								<li>
-									<a href="why-avantgarde-vacations.html">
-										Why Avantgarde Vacations
-									</a>
-								</li>
-
 							</ul>
 						</li>
 						<!-- end item with sub-menu -->
@@ -171,14 +178,14 @@
 
 					<div class="input-wrapper">
 					<label for="" class="label">
-						Agency/Organization
+						Agency/Organization *
 					</label>
 					<input type="text">
 					</div>
 
 					<div class="input-wrapper">
 						<label for="" class="label">
-							Organizer Name
+							Organizer Name *
 						</label>
 						<input type="text">
 						</div>
@@ -188,14 +195,14 @@
 
 					<div class="input-wrapper">
 					<label for="" class="label">
-						Email Adresss
+						Email Adresss *
 					</label>
 					<input type="text">
 					</div>
 
 					<div class="input-wrapper">
 						<label for="" class="label">
-							Call Phone
+							Call Phone *
 						</label>
 						<!-- start phone field -->
 						
@@ -217,7 +224,7 @@
 
 					<div class="input-wrapper">
 						<label for="" class="label">
-							Best Time To Call
+							Best Time To Call *
 
 						</label>
 						<input type="text">
@@ -228,21 +235,18 @@
 
 					<div class="input-wrapper">
 					<label for="" class="label">
-						Weekends To
+						Weekends To *
 					</label>
 
 					<div class="checkbox-row">
-						<div class="checkbox-wrapper">
-							<input type="checkbox">
-						<label for="" class="label">
-							Yes
-						</label>
-					</div>
-					<div class="checkbox-wrapper">
-						<input type="checkbox"><label for="" class="label">
-							No
-						</label>
-					</div>
+
+						<div class="checkbox-wrapper checkbox-wrapper--radio">
+							<input class="radio" type="radio" value="yes" name="radio">
+							<label class="label" for="">Yes</label>
+						</div>
+
+						<div class="checkbox-wrapper checkbox-wrapper--radio"><input class="radio" type="radio" value="no" name="radio"><label class="label" for="">No</label></div>
+
 					</div>
 					
 				
@@ -262,14 +266,14 @@
 
 					<div class="input-wrapper">
 					<label for="" class="label">
-						Destination Country
+						Destination Country *
 					</label>
 					<input type="text">
 					</div>
 
 					<div class="input-wrapper">
 						<label for="" class="label">
-							Cities To Visit
+							Cities To Visit *
 						</label>
 						<input type="text">
 						</div>
@@ -297,27 +301,25 @@
 
 					<div class="input-wrapper">
 					<label for="" class="label">
-						Departure City
+						Departure City *
 					</label>
 					<input type="text">
 					</div>
 
 					<div class="input-wrapper">
 						<label for="" class="label">
-							Include Airfare
+							Include Airfare *
 						</label>
 	
 						<div class="checkbox-row">
-							<div class="checkbox-wrapper">
-							<input type="checkbox"><label for="" class="label">
-								Yes
-							</label>
-						</div>
-						<div class="checkbox-wrapper">
-							<input type="checkbox"><label for="" class="label">
-								No
-							</label>
-						</div>
+
+							<div class="checkbox-wrapper checkbox-wrapper--radio">
+								<input class="radio" type="radio" value="yes" name="radio">
+								<label class="label" for="">Yes</label>
+							</div>
+	
+							<div class="checkbox-wrapper checkbox-wrapper--radio"><input class="radio" type="radio" value="no" name="radio"><label class="label" for="">No</label></div>
+	
 						</div>
 						
 					
@@ -329,14 +331,35 @@
 				
 
 			
+				<div class="inputs-row">
 
-					<div class="input-wrapper">
+					<div class="input-wrapper input-wrapper--s">
 					<label for="" class="label">
 						How Many People
 					</label>
 					<input type="number" min="1" max="999" maxlength="2" class="peoples-count input--3">
-					<div class="red-text">If you have less than 10 people, use the <a href="#">FIT Request Form</a> instead</div>
+					<!-- <div class="red-text">If you have less than 10 people, use the <a href="#">FIT Request Form</a> instead</div> -->
 					
+					</div>
+
+			
+
+						<div class="input-wrapper input-wrapper--row input-wrapper--xl">
+						<label for="" class="label">
+							What is your budget range? *
+						</label>
+	
+						
+							<div class="checkbox-row">
+							<div class="checkbox-wrapper">
+								<input type="num" class="input-num">
+							
+						</div>
+						<div class="checkbox-wrapper">
+							<input type="num" class="input-num">
+						</div>
+						</div>
+						</div>		
 					</div>
 
 					
@@ -345,7 +368,7 @@
 			
 					<div class="input-wrapper mb-30">
 					<label for="" class="label">
-						Hotel Type
+						Hotel Type *
 					</label>
 
 					<div class="checkbox-row">
@@ -373,7 +396,7 @@
 
 					<div class="input-wrapper mb-30">
 						<label for="" class="label">
-							Meals To Include
+							Meals To Include *
 						</label>
 	
 						<div class="checkbox-row">
@@ -413,7 +436,7 @@
 
 					<div class="input-wrapper">
 					<label for="" class="label">
-						What is in your mind
+						What is in your mind *
 					</label>
 					<textarea name="" id=""></textarea>
 					</div>
@@ -425,7 +448,7 @@
 
 					<div class="input-wrapper">
 					<label for="" class="label">
-						Antthing else to add
+						Anything else to add
 					</label>
 					<textarea name="" id=""></textarea>
 					</div>

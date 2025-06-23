@@ -7,7 +7,6 @@ $(function(){
 
     $('.destination-item__plus').click(function(){
         $(this).parent().parent().find('.destination-item__content').slideToggle();
-        // $(this).parent().toggleClass('active');
     })
 
 
@@ -55,7 +54,7 @@ $('.slider').slick({
 });
 
 $('.multu-slider').slick({
-    slidesToShow: 4,
+    slidesToShow: 3,
     nextArrow: $('.multu-next'),
     prevArrow: $('.multu-prev'),
     responsive: [
